@@ -1,0 +1,52 @@
+/**
+ * Just another rofi config.
+ *
+ * User: matheushsouza
+ * Copyright: none.
+ */
+
+* {
+    background-color: rgba(0,0,0,1);
+    text-color:       #f4f8ff;
+}
+
+window {
+    anchor:   north;
+    location: north;
+    y-offset: 16px;
+    
+    width: 50%;
+
+    transparency: true;
+
+    children: [ myControlBox ];
+}
+
+myControlBox {
+    children: [ entry, listview, sidebar ];
+}
+
+entry {
+   padding: 2px;
+   expand:  false;
+   width:   20em;
+   font:    "Inconsolata 18";
+}
+
+listview {
+   padding:          5px;
+   spacing:          3px;
+   background-color: #161616;
+   columns:          2;
+   lines:            10;
+}
+
+element {
+  padding:          1px;
+  border-radius:    8px;
+  font:             "Cantarell 12";
+}
+
+element selected {
+   background-color: #292b2d;
+}
