@@ -13,7 +13,7 @@
 window {
     anchor:   north;
     location: north;
-    y-offset: 16px;
+    y-offset: 22px;
     
     width: 50%;
 
